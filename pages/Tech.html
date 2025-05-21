@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Repair Entry</title>
+  <link rel="stylesheet" href="/static/css/style.QC.css" />
+  <link rel="stylesheet" href="/static/css/style.profile.css">
+</head>
+<body>
+  <nav>
+  <div class="nav-links1">
+      <a href="/pages/profile.html">CHROMEBOOK REPAIR</a>
+  </div>
+  <div class="nav-links">
+    <a href="/pages/admin.html">Admin</a>
+    <div class="dropdown">
+        <a href="#">Work</a>
+        <div class="dropdown-content">
+          <a href="/pages/QC.html">QC</a>
+          <a href="/pages/Tech.html">Tech</a>
+        </div>
+    </div>
+    <a href="/pages/Under_development.html">Settings</a>
+    <a href="/pages/index.html">Logout</a>
+  </div>
+</nav>
+  <div class="page-wrapper">
+    <div class="form-container">
+      <h1>Technician Repair Entry</h1>
+
+      <form id="techForm">
+        <label for="cbModel">CB Model:</label>
+        <input type="text" id="cbModel" name="cbModel" required>
+
+        <label for="assetTag">Asset Tag:</label>
+        <input type="text" id="assetTag" name="assetTag" required>
+
+        <label for="partDetails">Part Details:</label>
+        <textarea id="partDetails" name="partDetails"></textarea>
+
+        <label for="workCompleted">Work Completed:</label>
+        <textarea id="workCompleted" name="workCompleted" required></textarea>
+
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+
+        <label for="technician">Technician:</label>
+        <input type="text" id="technician" name="technician" required>
+
+        <label for="dateCompleted">Date Completed:</label>
+        <input type="date" id="dateCompleted" name="dateCompleted" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/js/tech.js"></script>
+</body>
+</html>

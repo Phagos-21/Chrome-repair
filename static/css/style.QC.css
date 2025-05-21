@@ -1,0 +1,87 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 110%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e6e9ff, #cbd4ff);
+  color: #002e66;
+}
+
+/* Wrapper keeps everything centered and padded */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* Center vertically */
+  padding: 90px 20px;
+  min-height: 100vh; /* ensures it still fills the screen */
+}
+
+/* Form container stays nicely styled */
+.form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #002e66;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #002e66;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #f8f8f8;
+  color: #002e66;
+  box-sizing: border-box; /* Ensure padding/border don't affect width */
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #002e66;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #001f47;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  padding: 90px 20px;
+  min-height: 100vh;
+
+  
+  transform: translateY(-50px);
+}

@@ -1,0 +1,112 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 30px 20px;
+      background-color: #f2f4f8;
+      color: #002e66;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #002e66;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    th {
+      background-color: #002e66;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f7f9fc;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+      color: #002e66;
+      background-color: #fefefe;
+    }
+
+    button {
+      display: block;
+      margin: 30px auto 0;
+      background-color: #002e66;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #001f47;
+    }
+
+    /* Responsive table layout */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        background: #ffffff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        padding: 12px;
+      }
+
+      td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 16px;
+        top: 14px;
+        font-weight: bold;
+        color: #002e66;
+        text-align: left;
+        width: calc(50% - 32px);
+      }
+
+      td:last-child {
+        border-bottom: none;
+      }
+    }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/static/css/style.profile.css">
+</head>
+<body>
+    <nav>
+<div class="nav-links1">
+    <a href="profile.html">CHROMEBOOK REPAIR</a>
+</div>
+<div class="nav-links">
+<a href="admin.html">Admin</a>
+<div class="dropdown">
+    <a href="#">Work</a>
+    <div class="dropdown-content">
+      <a href="/pages/QC.html">QC</a>
+      <a href="/pages/Tech.html">Tech</a>
+    </div>
+  </div>
+<a href="Under_development.html">Settings</a>
+<a href="index.html">Logout</a>
+</div>
+</nav>
+
+<div class="container">
+<div class="welcome">Welcome, Rocklin Student!</div>
+
+<div class="profile-info">
+    <div class="card">
+        <h3>Name</h3>
+        <p id="userName">(Placeholder)</p>
+    </div>
+    <div class="card">
+        <h3>Age</h3>
+    <p>(Placeholder)</p>
+    </div>
+    <div class="card">
+        <h3>Class</h3>
+    <div class="class-info">
+    <p>(Placeholder)</p>
+    <p>(Placeholder)</p>
+    </div>
+</div>
+</div>
+
+<div class="about-section">
+<h2>About Me</h2>
+<p>A passionate learner who enjoys solving technical problems and helping others with Chromebook issues. Always curious and ready to improve!</p>
+</div>
+
+<div class="activity-log">
+<h2>Activity Overview (Under Development)</h2>
+<div class="activity-item">Submitted Chromebook Repair Request - April 8</div>
+<div class="activity-item">Request marked as resolved - April 9</div>
+<div class="activity-item">Device picked up - April 9</div>
+</div>
+</div>
+        <script src="/static/js/profile.js"></script>
+        <script>
+  // имя пользователя
+  async function loadProfile() {
+    try {
+      const response = await fetch("/api/me");
+      const user = await response.json();
+
+      if (user.name) {
+        document.getElementById("userName").innerText = user.name;
+      } else {
+        document.getElementById("userName").innerText = "Unknown User";
+      }
+    } catch (err) {
+      console.error("Failed to load user:", err);
+      document.getElementById("userName").innerText = "Error loading user";
+    }
+  }
+
+  loadProfile();
+</script>
+</body>
+</html>

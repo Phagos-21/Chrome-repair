@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Phagos",
+        "email": "mark.ruchinskas@rocklinusd.org",
+        "password": "4cd2e1d3f4be9e8eb2b1642f1376946373a11cd84cf2a0a824ae823533328745"
+    },
+    {
+        "name": "Evyatar Michal",
+        "email": "evyatar.michal@rocklinusd.org",
+        "password": "508d86b8f4e27137a36db2d806f9cd20349e78a85c9ca9895d204acb9a478803"
+    },
+    {
+        "name": "Teacher",
+        "email": "teacherEmail@rocklinusd.org",
+        "password": "c596e268fea18473ea763797c0d7f4ef02cc1b13528fa7a8186c96f7da4e81cd"
+    }
+]

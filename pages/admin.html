@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repair Admin</title>
+  <link rel="stylesheet" href="/static/css/admin.css">
+  <link rel="stylesheet" href="/static/css/style.profile.css">
+  <script src="/static/js/admin.js" defer></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-links1">
+        <a href="profile.html">CHROMEBOOK REPAIR</a>
+    </div>
+    <div class="nav-links">
+    <a href="admin.html">Admin</a>
+    <div class="dropdown">
+        <a href="#">Work</a>
+        <div class="dropdown-content">
+          <a href="/pages/QC.html">QC</a>
+          <a href="/pages/Tech.html">Tech</a>
+        </div>
+      </div>
+    <a href="Under_development.html">Settings</a>
+    <a href="index.html">Logout</a>
+    </div>
+  </nav>
+  <h1>Repairs Admin Panel</h1>
+  <table id="repairsTable">
+    <thead>
+      <tr id="tableHeader"></tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+  <button onclick="saveChanges()">Save Changes</button>
+</body>
+</html>

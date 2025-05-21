@@ -1,0 +1,21 @@
+[
+    {
+        "model": "Sukhoi Su-25 \"Frogfoot\"",
+        "asset_tag": "180921",
+        "qc_name": "Official kermlin account",
+        "notes": "The government reports to the media that the plane destroyed the entire Ukrainian, American and British air forces in under 30 minutes before running out of fuel and going back to base",
+        "date": "2025-05-19"
+    },
+    {
+        "model": "234234",
+        "asset_tag": "3333",
+        "partDetails": "123123",
+        "workCompleted": "21312",
+        "notes": "435345",
+        "technician": "3123",
+        "dateCompleted": "2025-05-29",
+        "comments": "",
+        "qc_name": "345345",
+        "date": "2025-05-08"
+    }
+]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chromebook Repair Entry</title>
+    <link rel="stylesheet" href="/static/css/style.QC.css">
+    <link rel="stylesheet" href="/static/css/style.profile.css">
+</head>
+<body>
+        <nav>
+  <div class="nav-links1">
+      <a href="/pages/profile.html">CHROMEBOOK REPAIR</a>
+  </div>
+  <div class="nav-links">
+    <a href="/pages/admin.html">Admin</a>
+    <div class="dropdown">
+        <a href="#">Work</a>
+        <div class="dropdown-content">
+          <a href="/pages/QC.html">QC</a>
+          <a href="/pages/Tech.html">Tech</a>
+        </div>
+    </div>
+    <a href="/pages/Under_development.html">Settings</a>
+    <a href="/pages/index.html">Logout</a>
+  </div>
+</nav>
+    <div class="page-wrapper">
+        <div class="form-container">
+            <h1>Chromebook Repair Entry</h1>
+            <form id="repairForm">
+                <label for="model">CB Model:</label>
+                <input type="text" id="model" name="model" required>
+
+                <label for="asset_tag">CB Asset Tag#:</label>
+                <input type="text" id="asset_tag" name="asset_tag" required>
+
+                <label for="qc_name">QC Name:</label>
+                <input type="text" id="qc_name" name="qc_name" required>
+
+                <label for="notes">Notes (optional):</label>
+                <textarea id="notes" name="notes"></textarea>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="resultMessage"></div>
+        </div>
+    </div>
+    <script src="/static/js/QC.js"></script>
+</body>
+</html>

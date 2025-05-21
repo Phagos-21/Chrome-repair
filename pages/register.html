@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/css/style.reg.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Register New Account</h2>
+    <form id="registerForm">
+        <input type="text" id="registerName" placeholder="Name" required />
+        <input type="email" id="registerEmail" placeholder="Email (@rocklinusd.org only)" required />
+        
+        <select id="registerClass" required>
+          <option value="" disabled selected>Select your class</option>
+          <option value="1">Game Design, P1</option>
+          <option value="2">RIOT, P2</option>
+          <option value="3">ECS, P3</option>
+          <option value="4">ECS, P4</option>
+          <option value="5">Cyber Security, P5</option>
+          <option value="6">ECS, P6</option>
+          <option value="7">APCSP, P8</option>
+        </select>
+      
+        <input type="password" id="registerPassword" placeholder="Password" required />
+        <input type="password" id="registerConfirmPassword" placeholder="Password Confirmation" required />
+        <button type="button" id="goToLoginBtn">Already have an account? Log In</button>
+        <button type="submit">Register</button>
+      </form>
+      
+      <div id="password-error" style="color: red; margin-top: 8px;"></div>
+      <button class="google-btn">Register With Google [N/A]</button>
+      
+    <p id="message"></p>
+  </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
