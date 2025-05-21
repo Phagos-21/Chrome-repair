@@ -34,7 +34,7 @@ def home():
 @app.route('/pages/<path:path>')
 def pages(path):
     if path == 'profile.html' and 'user' not in session:
-        return redirect('/pages/login.html')
+        return redirect('/pages/profile.html')
     return send_from_directory('pages', path)
 
 # Регистрация
